@@ -6,17 +6,9 @@ defmodule DesafioStone do
   import DesafioStone.HasDuplicates, only: [has_duplicates?: 1]
   import DesafioStone.DivideValues, only: [divide_values: 2]
 
-  def receive_list([], []) do
-    IO.puts("lista de itens e emails está vazia")
-  end
-
-  def receive_list([], _) do
-    IO.puts("lista de itens está vazia")
-  end
-
-  def receive_list(_, []) do
-    IO.puts("lista de emails está vazia")
-  end
+  def receive_list([], []), do: IO.puts("lista de itens e emails está vazia")
+  def receive_list([], _), do: IO.puts("lista de itens está vazia")
+  def receive_list(_, []), do: IO.puts("lista de emails está vazia")
 
   def receive_list(list, emails) do
     check_emails = has_duplicates?(emails)
@@ -31,9 +23,8 @@ defmodule DesafioStone do
     end
   end
 
-  defp total(value, emails) do
-    Enum.map(emails, fn email -> %{email: email, value: value} end)
-  end
+  defp total(value, emails), do: Enum.map(emails, fn email -> %{email: email, value: value} end)
+
 end
 
 mock_itens = [
