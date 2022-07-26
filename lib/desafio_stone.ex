@@ -29,7 +29,7 @@ defmodule DesafioStone do
 
   defp sum_list(list) do
     Enum.reduce(list, 0, fn item, acc ->
-      if item.amount >= 0 and item.price >= 0,
+      if item.amount > 0 and item.price > 0,
         do: item.amount * item.price + acc,
         else: {:error, "valores de amount e price devem ser maiores do que 0"}
     end)
