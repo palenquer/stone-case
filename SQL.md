@@ -1,5 +1,5 @@
 # Query 1 do desafio de Banco de dados
-
+``` sql
 CREATE TABLE accounts(
     id serial PRIMARY KEY,
 	agency INTEGER NOT NULL,
@@ -82,3 +82,4 @@ OR DELETE OR TRUNCATE
 ON accounts
 FOR EACH STATEMENT
 EXECUTE PROCEDURE update_balances();
+```
