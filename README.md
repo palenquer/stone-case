@@ -2,7 +2,7 @@
 
 # Banco de dados
 
-A query de banco de dados se encontram no arquivo SQL.md do projeto.
+A query de banco de dados se encontra no arquivo SQL.md do projeto.
 
 # Programação
 
