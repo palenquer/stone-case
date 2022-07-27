@@ -1,10 +1,10 @@
-# Stone - Case Técnico Elixir
+## Stone - Case Técnico Elixir
 
-#Banco de dados
+# Banco de dados
 
 A query de banco de dados se encontram no arquivo SQL.md do projeto.
 
-#Programação
+# Programação
 
 O módulo principal deste case se encontra dentro de lib/desafio_stone.ex. Dentro deste módulo só haverá 1 função acessível chamada receive_list, esta função recebe 2 parâmetros, o primeiro é uma lista de compras e o segundo é uma lista de emails. Ao executar a função com os parâmetros corretos, é retornado uma lista com os mapas contendo email e valor a ser pago.
 
